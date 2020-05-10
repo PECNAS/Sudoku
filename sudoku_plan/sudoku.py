@@ -1,5 +1,5 @@
 def sudoku_check(first, second, third, fourth):
-	print(f"{first}\n{second}\n{third}\n{fourth}")
+	
 
 
 if __name__ == "__main__":
