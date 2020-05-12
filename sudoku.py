@@ -48,6 +48,13 @@ def solve_sudoku(grid, i=0, j=0): # рекурсия
 
 				grid[i][j] = 0 # обнуляем ячейку
 		return False
+def sudoku_start(grid):
+	solve_sudoku(grid)
+	sudoku_check(grid)
+	for row in grid:
+		print(row)
+
+
 
 if __name__ == "__main__":
 	data = [[1, 4, ".", 3], [3, ".", ".", 1], [".", 1, 3, "."], [".", ".", ".", 4]]
